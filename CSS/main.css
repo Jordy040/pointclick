@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: auto 608px auto;
+    gap: 20px;
+    margin: 0px;
+    background-color: black;
+}
+
+h1 {
+    color:white;
+}
+
+p{
+    margin-top: 6px;
+    text-align: center;
+    color: white;
+}
+
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: center;
+}
+#gameWindow{
+    position: relative;
+    width: 800px;
+    height: 608px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: blue;
+    background-image:url("../assets/img/tilemap1.jpg");
+    border: white 1px solid;
+}
+#inventoryBox{
+    position: relative;
+    display: block;
+    left: 10px;
+    top: 10px;
+    width: 180px;
+    height: 80px;
+    color: white;
+    background-color: rgb(122, 90, 34);
+    border: white 1px solid;
+    padding: 10px;
+}
+
+#dialogBar{
+    bottom: 0px;
+}
+
+#setMainDialog{
+    position: relative;
+    height: 64px;
+    width: 800px;
+}
+
+.foreground{
+    position: absolute;
+    z-index: 1000;
+}
+#brownBar{
+    width: 800px;
+    height: 50px;
+    background-color: rgb(122, 90, 34);
+    border-top: white 1px solid;
+}
+#mainCharacterSpeech{
+left: 0px;
+bottom: 0px;
+width: 100px;
+height: 100px;
+
+}
+#counterSpeech{
+    right: 0px;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+   
+}
